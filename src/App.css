@@ -1,0 +1,125 @@
+.page {
+  min-height: 100vh;
+  padding: 20px 48px;
+  background: linear-gradient(#fbfaf7, #f6f1ea);
+  color: #24211d;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.page__header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.page__title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.page__subtitle {
+  margin: 0;
+  font-size: 16px;
+  color: #5f5750;
+}
+
+.statistics {
+  padding: 20px 24px;
+  background-color: rgba(255, 255, 255, 0.82);
+  border: 1px solid #e7dfd4;
+  border-radius: 18px;
+  box-shadow: 0 12px 32px rgba(82, 68, 52, 0.1);
+}
+
+.statistics__title {
+  margin: 0 0 16px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.statistics__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 0;
+}
+
+.statistics__item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statistics__item dt {
+  font-size: 14px;
+  color: #5f5750;
+}
+
+.statistics__item dd {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.new-book {
+  padding: 24px;
+  background-color: rgba(255, 255, 255, 0.82);
+  border: 1px solid #e7dfd4;
+  border-radius: 18px;
+  box-shadow: 0 12px 32px rgba(82, 68, 52, 0.1);
+}
+
+.new-book__title {
+  margin: 0 0 16px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 420px;
+}
+
+.book-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.book-form__field label {
+  font-size: 14px;
+  color: #5f5750;
+}
+
+.book-form__field input,
+.book-form__field select {
+  padding: 10px 12px;
+  border: 1px solid #d8cfc2;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #ffffff;
+}
+
+.book-form__submit {
+  align-self: flex-start;
+  padding: 10px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #8b735f;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.book-form__submit:hover {
+  background-color: #745e4d;
+}

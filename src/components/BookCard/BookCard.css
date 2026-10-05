@@ -1,0 +1,146 @@
+.book-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.72);
+  border: 1px solid #e6ded3;
+  border-radius: 14px;
+}
+
+.book-card__cover {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 86px;
+  height: 122px;
+  padding: 10px;
+  color: #f8f1e7;
+  border-radius: 6px;
+  box-shadow: 0 8px 18px rgba(47, 39, 31, 0.22);
+}
+
+.book-card__cover--done {
+  background: linear-gradient(135deg, #171414, #7f1d1d);
+}
+
+.book-card__cover--reading {
+  background: linear-gradient(135deg, #e9dcc8, #8b735f);
+}
+
+.book-card__cover--want {
+  background: linear-gradient(135deg, #241b3d, #6d4c8d);
+}
+
+.book-card__cover-title {
+  font-weight: 600;
+  line-height: 1.15;
+  text-align: center;
+  word-break: break-word;
+}
+
+.book-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.book-card__title {
+  margin: 8px 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.book-card__author {
+  margin: 0 0 12px;
+  font-size: 18px;
+  color: #5f5750;
+}
+
+.book-card__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  width: fit-content;
+  padding: 5px 12px;
+  font-size: 15px;
+  border-radius: 999px;
+}
+
+.book-card__badge::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.book-card__badge--done {
+  color: #2f6b3d;
+  background-color: #dff0df;
+}
+.book-card__badge--done::before {
+  background-color: #5fa76a;
+}
+
+.book-card__badge--reading {
+  color: #1f6c9e;
+  background-color: #dff0fa;
+}
+.book-card__badge--reading::before {
+  background-color: #3b94cf;
+}
+
+.book-card__badge--want {
+  color: #5f5b55;
+  background-color: #ece9e5;
+}
+.book-card__badge--want::before {
+  background-color: #aaa39b;
+}
+
+.book-card__info {
+  margin: 12px 0 0;
+  font-size: 17px;
+  color: #5f5750;
+}
+
+.book-card__stars {
+  color: #e6b24c;
+  letter-spacing: 1px;
+}
+
+.book-card__delete {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  margin-left: auto;
+  font-size: 18px;
+  background-color: #fffaf4;
+  border: 1px solid #ded6cc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.book-card__delete:hover {
+  background-color: #f3e9dd;
+}
+
+.book-card__delete:active {
+  background-color: #e8d8c6;
+}
+
+.book-card__delete:focus-visible {
+  outline: 2px solid #8b735f;
+  outline-offset: 2px;
+}
+
+.book-card__delete:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
